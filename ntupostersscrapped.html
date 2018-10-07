@@ -1,124 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="istelogo.png"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Notice The Unnoticed</title>
-	<style type="text/css">
-	@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-
-#container {
-  color:#999;
-  text-transform: uppercase;
-  font-size:36px;
-  font-weight:bold;
-  top: 30px; 
-  position:absolute;
-  width:100%;
-  bottom:45%;
-  display:block;
-}
-
-#flip {
-  height:50px;
-  overflow:hidden;
-}
-
-#flip > div > div {
-  color:#fff;
-  padding:4px 12px;
-  height:45px;
-  margin-bottom:45px;
-  display:inline-block;
-}
-
-#flip div:first-child {
-  animation: show 3s linear infinite;
-}
-
-#flip div div {
-  background:#42c58a;
-}
-#flip div:first-child div {
-  background:#4ec7f3;
-}
-#flip div:last-child div {
-  background: #FFC300 ;
-}
-
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-}
-
-
-body
+	<style>
+		body
 		{
 			color:#ffffff;
 			font-family: Cursive;
-			background-image: url("abstract.png");
+			font-size: 15px;
+			background-image: url("ntubackground4.png");
 			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		img
-		{
-			max-width: 100px;
+			background-size: 100%;
 		}
 		.back
 		{
-			background:rgba(255,255,255,0.4);
-			color: #0acefa;
-			padding: 10px;
+			background:rgba(255,255,255,0.5);
+			color: #0340FD;
+			/*padding-left:60px;*/
+			/*width: 100%;*/
+			/*margin-left: 440px;*/
+			padding-bottom: 5px;
 		}
-		p
-		{
-			font-size: 25px;
-			margin-left: 180px;
-		}
-		h1
-		{
-			font-size: 30px;
-		}
-		i
-		{
-			font-size:30px;
-		}
-		#ves
-		{
-			/*margin-right: 225px;*/
-			float: right;padding-right: 300px;
-		}
-		#iste
-		{
-			/*margin-left: 395px;*/
-			float: left;padding-left: 300px;
-		}
-
-
-		@media(max-width: 768px)
+		
+		@media only screen and (max-width: 768px)
 		{
 			html
 			{
-			background-image: url("abstract.png") no-repeat;
-			overflow: hidden;
-			height: 100%;
-			background-size: cover;
-			}
-			h1
-			{
-				font-size: 20px;
+				background-image: url("ntubackground3.png");
+				background-repeat: no-repeat;/*center center fixed;*/
+				/*background-size:cover;*/
+				height: 100%;
+				overflow:hidden;
 			}
 			img
 			{
@@ -126,97 +37,70 @@ body
 			}
 			p
 			{
-				font-size: 15px;
-				margin-left: 10px;
-			}
-			#container 
-			{
-			  color:#999;
-			  text-transform: uppercase;
-			  font-size:18px;
-			  font-weight:bold;
-			  top: 30px; 
-			  position:absolute;
-			  width:100%;
-			  bottom:45%;
-			  display:block;
-			}
-
-			#flip 
-			{
-			  height:30px;
-			  overflow:hidden;
-			}
-
-			#flip > div > div 
-			{
-			  color:#fff;
-			  padding:2px 4px;
-			  height:45px;
-			  margin-bottom:45px;
-			  display:inline-block;
-			}
-
-			#flip div:first-child 
-			{
-			  animation: show 3s linear infinite;
-			}
-
-			#flip div div 
-			{
-			  background:#42c58a;
-			}
-			#flip div:first-child div 
-			{
-			  background:#4ec7f3;
-			}
-			#flip div:last-child div 
-			{
-			  background: #FFC300 ;
-			}
-			#ves
-			{
-				float:right;padding-right: 30px;
-			}
-			#iste
-			{
-				float:left;padding-left: 30px;
-			}
-			#contact
-			{
-				font-size: 13px;
+				font-size: 10px;
 			}
 		}
-</style>
+		#iste
+		{
+			max-width: 100px;
+			margin: 1% auto;
+			display: block;
+		}
+		#ves
+		{
+			max-width: 100px;
+			margin: 1% auto;
+			display: block;
+		}
+		p
+		{
+			font-size: 40px;
+			text-align: bottom;
+		}
+	</style>
+	<title>Notice The Unnoticed</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="istelogo.png"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
-	
-<div>
-	<br>
 
-	<img src="istelogo.png" id="iste">
-	<div id="container" style="margin:0px;  font-family:'Roboto';text-align: center;">
-		&nbsp;&nbsp;
-			ISTE-VESIT&nbsp;&nbsp;
-		<div id="flip">
-			<div><div>Unnoticed</div></div>
-			<div><div>The</div></div>
-			<div><div>Notice</div></div>
+
+
+<!--<div class="container text-center">
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="istelogo.png" id="icon">
 		</div>
-	</div>
-	<img src="veslogo.png" id="ves" >
+		<div class="col-sm-4">
+			<h2>Notice The Unnoticed</h2>
+		</div>
+		<div class="col-sm-4">
+			<img src="veslogo.png" id="icon">
+		</div>
+	</div>	
+</div>-->
 
+
+
+
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+<br>
+<div class="row back">
+    <div class="col-sm-4 img-responsive" ><img src="istelogo.png" id="iste"></div>
+    <div class="col-md-4"><p style="float:left;" >&nbsp;&nbsp;&nbsp;&nbsp;Notice The Unnoticed</p></div>
+    <div class="col-sm-4 img-responsive"><img src="veslogo.png" id="ves"></div>
 </div>
-
 <br><br><br>
 
 
-<br><br>
-
-
-<div style="padding:0px; margin:0px;">
-
-<script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_1_slider_init = function() {
 
@@ -246,7 +130,7 @@ body
             ];
 
             var jssor_1_options = {
-              $AutoPlay: 0,
+              $AutoPlay: 1,
               $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
                 $Transitions: jssor_1_SlideshowTransitions,
@@ -330,37 +214,53 @@ body
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
     </style>
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen --->
+        <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
         </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
             <div>
-                <img data-u="image" src="day1.jpg" />
-                <img data-u="thumb" src="day1.jpg" />
+                <img data-u="image" src="img/031.jpg" />
+                <img data-u="thumb" src="img/031-s190x90.jpg" />
             </div>
             <div>
-                <img data-u="image" src="day2.jpg" />
-                <img data-u="thumb" src="day2.jpg" />
+                <img data-u="image" src="img/032.jpg" />
+                <img data-u="thumb" src="img/032-s190x90.jpg" />
             </div>
             <div>
-                <img data-u="image" src="day3.jpg" />
-                <img data-u="thumb" src="day3.jpg" />
+                <img data-u="image" src="img/033.jpg" />
+                <img data-u="thumb" src="img/033-s190x90.jpg" />
             </div>
             <div>
-                <img data-u="image" src="day4.jpg" />
-                <img data-u="thumb" src="day4.jpg" />
+                <img data-u="image" src="img/034.jpg" />
+                <img data-u="thumb" src="img/034-s190x90.jpg" />
             </div>
             <div>
-                <img data-u="image" src="day5.jpg" />
-                <img data-u="thumb" src="day5.jpg" />
+                <img data-u="image" src="img/035.jpg" />
+                <img data-u="thumb" src="img/035-s190x90.jpg" />
             </div>
             <div>
-                <img data-u="image" src="day6.jpg" />
-                <img data-u="thumb" src="day6.jpg" />
+                <img data-u="image" src="img/036.jpg" />
+                <img data-u="thumb" src="img/036-s190x90.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/037.jpg" />
+                <img data-u="thumb" src="img/037-s190x90.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/038.jpg" />
+                <img data-u="thumb" src="img/038-s190x90.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/039.jpg" />
+                <img data-u="thumb" src="img/039-s190x90.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/040.jpg" />
+                <img data-u="thumb" src="img/040-s190x90.jpg" />
             </div>
         </div>
-        <!-- Thumbnail Navigator 
+        <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
             <div data-u="slides">
                 <div data-u="prototype" class="p" style="width:190px;height:90px;">
@@ -372,8 +272,7 @@ body
                     </svg>
                 </div>
             </div>
-        </div>-->
-
+        </div>
         <!-- Arrow Navigator -->
         <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;" data-scale="0.75">
             <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
@@ -393,110 +292,8 @@ body
     <script type="text/javascript">jssor_1_slider_init();</script>
     <!-- #endregion Jssor Slider End -->
 
-</div>
 
 
-
-
-<p id="contact">Send your answers at-
-	<br>SE's:<i class="fa fa-whatsapp"style="color:green"></i>&nbsp;9757082094 Monish Niduvaje
-	<br>TE's:<i class="fa fa-whatsapp"style="color:green"></i>&nbsp;8108684572 Aditya Ranka
-	<br>BE's & MCA:<i class="fa fa-whatsapp"style="color:green"></i>&nbsp;9987460850 Vindhya Ranpise
-</p>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<style type="text/css">
-		
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-
-
-
-
-svg {
-  position: absolute;
-  font: 50px Ubuntu;
-  letter-spacing: 0.15em;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-}
-
-svg text {
-  fill: #111;
-  stroke: #111;
-  fill-opacity: 1;
-  stroke-width: 0;
-  stroke-dasharray: 100% 0;
-  animation: stroke-offset 2s ease-out infinite;
-}
-
-@keyframes stroke-offset {
-  0% {
-    fill-opacity: 5;
-    stroke-dasharray: 0% 100%;
-  }
-  25% {
-    stroke-width: 2px;
-  }
-  50% {
-    fill-opacity: 0;
-  }
-  75% {
-    stroke-width: 2px;
-  }
-  100% {
-    stroke-width: 0;
-  }
-}
-
-	</style>
-</head>
-<body>
-
-<svg viewBox="0 300 1280 720">
-  <text text-anchor="middle" x="50%" y="50%">Notice The Unnoticed<br></text>
-</svg>
-
-</body>
-</html>-->
